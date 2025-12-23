@@ -1,0 +1,12 @@
+﻿@model List<FintechApp.Models.Cliente>
+
+<h2>Clientes</h2>
+
+<a href="/Cliente/Crear">Nuevo Cliente</a>
+
+<ul>
+    @foreach (var c in Model)
+    {
+        <li>@c.Nombre @c.Apellido</li>
+    }
+</ul>
