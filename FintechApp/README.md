@@ -54,6 +54,11 @@ FintechApp
 └── README.md
 
 
+## 📐 Diagrama UML
+
+El siguiente diagrama representa el modelo de clases del sistema fintech, diseñado bajo el paradigma de Programación Orientada a Objetos.
+
+![Diagrama UML](docs/uml/diagrama-clases-fintech.png)
 
 
 
