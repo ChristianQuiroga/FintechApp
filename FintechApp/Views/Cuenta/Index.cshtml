@@ -1,0 +1,31 @@
+﻿@model List<Cuenta>
+
+<h2>Mis Cuentas</h2>
+<th>Acciones</th>
+
+<a href="/Cuenta/Create">Crear nueva cuenta</a>
+
+<table border="1" cellpadding="5">
+    <tr>
+        <th>Código</th>
+        <th>Saldo</th>
+    </tr>
+
+    @foreach (var cuenta in Model)
+    {
+        <tr>
+            <td>@cuenta.CodigoCuenta</td>
+            <td>$ @cuenta.Saldo</td>
+        </tr>
+
+        <td>
+            <a href="/Cuenta/Movimientos?codigoCuenta=@cuenta.CodigoCuenta">
+                Ver movimientos
+            </a>
+        </td>
+
+    }
+</table>
+
+<br />
+<a href="/Home/Index">Volver</a>

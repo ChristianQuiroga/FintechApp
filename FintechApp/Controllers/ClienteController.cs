@@ -24,5 +24,8 @@ namespace FintechApp.Controllers
             clientes.Add(cliente);
             return RedirectToAction("Index");
         }
+        
+       
+
     }
 }

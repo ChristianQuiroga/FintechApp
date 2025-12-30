@@ -9,6 +9,10 @@
         public string Email { get; set; }
         public string Password { get; set; }
 
-        public List<Cuenta> Cuentas { get; set; } = new();
+        public List<Cuenta> Cuentas { get; set; } = new(); //
+
+        //Métodos
+
+
     }
 }

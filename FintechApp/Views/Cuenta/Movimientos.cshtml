@@ -1,0 +1,27 @@
+﻿@model Cuenta
+
+<h2>Movimientos - @Model.CodigoCuenta</h2>
+<p>Saldo actual: $ @Model.Saldo</p>
+
+<a href="/Cuenta/Depositar?codigoCuenta=@Model.CodigoCuenta">Depositar</a> |
+<a href="/Cuenta/Retirar?codigoCuenta=@Model.CodigoCuenta">Retirar</a>
+
+<table border="1" cellpadding="5">
+    <tr>
+        <th>Tipo</th>
+        <th>Monto</th>
+        <th>Fecha</th>
+    </tr>
+
+    @foreach (var mov in Model.Movimientos)
+    {
+        <tr>
+            <td>@mov.Tipo</td>
+            <td>$ @mov.Monto</td>
+            <td>@mov.Fecha</td>
+        </tr>
+    }
+</table>
+
+<br />
+<a href="/Cuenta/Index">Volver</a>
