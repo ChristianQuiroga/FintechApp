@@ -25,7 +25,26 @@ El proyecto fue desarrollado aplicando el paradigma de Programación Orientada a
 - .NET 7 / .NET 8
 - HTML5
 - CSS
-- Git & GitHub
+- Razor
+- Git y GitHub
+- UML (UMLetino)
+
+- ---
+
+## Arquitectura del sistema
+
+El sistema se diseñó utilizando una arquitectura por capas:
+
+- **Dominio**: contiene las entidades del negocio (Cliente, Cuenta, Movimiento).
+- **Controllers**: gestionan las solicitudes HTTP.
+- **Services**: encapsulan la lógica de la aplicación.
+- **Repositories**: abstraen el acceso a los datos.
+
+La estructura fue documentada mediante:
+- Diagrama de clases de dominio
+- Diagrama de componentes
+
+Los diagramas se encuentran en la carpeta `docs/uml`.
 
 ---
 
@@ -60,7 +79,22 @@ El siguiente diagrama representa el modelo de clases del sistema fintech, diseñ
 
 ![Diagrama UML](docs/uml/diagrama-clases-fintech.png)
 
+---
+## Funcionalidades principales
+- Registro e inicio de sesión de clientes
+- Creación de cuentas
+- Depósitos y retiros
+- Visualización de movimientos
+- Control de sesión
 
+---
+
+## Ejecución del proyecto
+
+1. Clonar el repositorio
+2. Abrir la solución en Visual Studio
+3. Ejecutar el proyecto
+4. Acceder a la aplicación desde el navegador`
 
 ---
 
